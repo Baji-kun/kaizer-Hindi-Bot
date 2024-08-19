@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 # Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7004912844:AAEEWMWfuQQYmLKdodK9k3NDTCFRb21-AXo")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7188450763:AAFFQypvI-ucl-L9nMdOSgXq8DFcVIFX9-Y")
 
 # Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26977508"))
@@ -12,27 +12,27 @@ APP_ID = int(os.environ.get("APP_ID", "26977508"))
 API_HASH = os.environ.get("API_HASH", "396589629e6705c592bc7fe891dc6e37")
 
 # Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001916776617"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002114269913"))
 
 # OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6193451722"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5957500906"))
 
 # Port
 PORT = os.environ.get("PORT", "8080")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://paradoxt065:4gAgn8NfGSmIKzNv@cluster0.w6ziz8c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://paradox:paradoxmovie@cluster0.ops0m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "zeno")
 
 # Force sub channel id, if you want enable force sub
-FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "-1001613294962"))
-FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1002075485821"))
+FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "-1002027254241"))
+FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1002131408684"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "50"))
 
 # Mainly add graph else telegraph link
-START_PIC = os.environ.get("START_PIC", "https://graph.org/file/b1549fd4bc4a2b7dd04aa.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/3ab8716b37894ef7460e9.jpg")
+START_PIC = os.environ.get("START_PIC", "https://graph.org/file/951ce4c5d759ba604d8be.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/951ce4c5d759ba604d8be.jpg")
 
 # Add your text according to you
 HELP_TXT = "<b>Hi Dude!\nThis is an file to link bot work for @Animes_Paradox\n\n❏ Bot Cammands\n├/start : start the bot\n├/about : Our Information\n└/help : Help related Bot\n\n💥 Simply click on link and start the bot join both channels and try again thats it.....!\n\n🧑‍💻Developed by <a href=https://t.me/spy_Radios>Yuta Paradox</a></b>"
@@ -42,7 +42,7 @@ ABOUT_TXT = "<b>⟦⟧ Hi There {first}!💫\n┏━━━━━━━❪❂❫�
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜɪ ᴛʜᴇʀᴇ... {first}! 💥\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\n Powered By - @Animes_Paradox</b>")
 try:
     ADMINS=[6193451722]
-    for x in (os.environ.get("ADMINS", "6193451722 7194322981").split()):
+    for x in (os.environ.get("ADMINS", "").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Owner list does not contain valid integers.")
