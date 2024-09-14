@@ -41,11 +41,11 @@ ABOUT_TXT = "<b>Hi{first}\n┏━━━━━━━━━━━━━━━\n◈
 # start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜɪ {first}\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ\n Powered By - @Animes_Wide</b>")
 try:
-    ADMINS=[6193451722]
+    ADMINS=[6446763201]
     for x in (os.environ.get("ADMINS", "6193451722").split()):
         ADMINS.append(int(x))
-except ValueError: me 
-        raise Exception("Your Owner list does not contain valid integers.")
+except ValueError:
+        raise Exception("Your Admins list does not contain valid integers.") 
 
 # Force sub message
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\nᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ʙᴏᴛʜ ᴏꜰ ᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ !!")
