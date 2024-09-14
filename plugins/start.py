@@ -90,11 +90,10 @@ async def start_command(client: Client, message: Message):
         return
     else:
         reply_markup = InlineKeyboardMarkup([
-            [InlineKeyboardButton("ʜᴇʟᴘ", callback_data='help'),
-             InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data='about')],
             [InlineKeyboardButton('Anime Channel', url='https://t.me/Animes_Paradox'),
-             InlineKeyboardButton('Airing Channel', url='https://t.me/Ongoing_Paradox')],
-            [InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data='close')]
+             InlineKeyboardButton('Movie Channel', url='https://t.me/Ongoing_Paradox')],
+            [InlineKeyboardButton('Series Channel', url='https://t.me/Animes_Paradox'),
+             InlineKeyboardButton('Back-Up Channel', url='https://t.me/Ongoing_Paradox')],
         ])
         await message.reply_photo(
             photo = START_PIC,
