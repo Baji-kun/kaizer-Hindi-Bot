@@ -39,7 +39,8 @@ HELP_TXT = "<b>Hi\nThis is an file sharing bot work for @Animes_Wide\n\n❏ Bot 
 ABOUT_TXT = "<b>Hi{first}\n┏━━━━━━━━━━━━━━━\n◈ Owner: <a href=https://t.me/Itz_Spike>Spike</a>\n◈ Anime channel : <a href=https://t.me/Anime_Wide>Anime Wide</a>\n◈ Movie & Series: <a href=https://t.me/+mKXIX38_UpMxOTg1>Netflix</a>\n◈ Lɪʙʀᴀʀy : <a href=https://github.com/pyrogram>Pyʀᴏɢʀᴀᴍ</a>\n◈ ᴍʏ ꜱᴇʀᴠᴇʀ : <a href=https://dashboard.heroku.com>Heroku</a>\n◈ Develop By  : <a href=https://t.me/Itz_Spike>Spike</a>\n┗━━━━━━━━━━━━━━━</b>"
 
 # start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʜɪ {first}\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ\n Powered By - @Animes_Wide</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am a file store bot Powered by @Anime_Wide ❣️</b>")
+
 try:
     ADMINS=[6446763201]
     for x in (os.environ.get("ADMINS", "6193451722").split()):
@@ -48,7 +49,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.") 
 
 # Force sub message
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\nᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ʙᴏᴛʜ ᴏꜰ ᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ !!")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>ꜱᴏʀʀʏ, ᴅᴜᴅᴇ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ᴍʏ ᴄʜᴀɴɴᴇʟꜱ 😔</b>\n\n<b>ꜱᴏ, ᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʀʏ ᴀɢᴀɪɴ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ꜰɪʟᴇ ⚡</b>")
 
 # set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
