@@ -25,8 +25,8 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://luffyx7819:R0xYGEYRui9e2S
 DB_NAME = os.environ.get("DATABASE_NAME", "zeno")
 
 # Force sub channel id, if you want enable force sub
-FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "0"))
-FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "0"))
+FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", ""))
+FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", ""))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "50"))
 
@@ -35,20 +35,20 @@ START_PIC = os.environ.get("START_PIC", "https://graph.org/file/951ce4c5d759ba60
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/951ce4c5d759ba604d8be.jpg")
 
 # Add your text according to you
-HELP_TXT = "<b>Hi Dude!\nThis is an file to link bot work for @Animes_Paradox\n\n❏ Bot Cammands\n├/start : start the bot\n├/about : Our Information\n└/help : Help related Bot\n\n💥 Simply click on link and start the bot join both channels and try again thats it.....!\n\n🧑‍💻Developed by <a href=https://t.me/spy_Radios>Yuta Paradox</a></b>"
-ABOUT_TXT = "<b>⟦⟧ Hi There {first}!💫\n┏━━━━━━━❪❂❫━━━━━━━━\n◈ My God: <a href=https://t.me/spy_Radios>Yuta</a>\n◈ Animes channel : <a href=https://t.me/Animes_Paradox>Anime Paradox</a>\n◈ Ongoing Anime : <a href=https://t.me/Ongoing_Paradox>Ongoing Paradox</a>\n◈ Lɪʙʀᴀʀy : <a href=https://github.com/pyrogram>Pyʀᴏɢʀᴀᴍ</a>\n◈ ᴍʏ ꜱᴇʀᴠᴇʀ : <a href=https://dashboard.heroku.com>Heroku</a>\n◈ Develop By  : <a href=https://t.me/Spy_Radios>Yuta</a>\n┗━━━━━━━❪❂❫━━━━━━━━</b>"
+HELP_TXT = "<b>Hi\nThis is an file sharing bot work for @Animes_Wide\n\n❏ Bot Cammands\n├/start : start the bot\n\nSimply click on link and start the bot join both channels and try again thats it\n\nDeveloped by <a href=https://t.me/Itz_Spike>Spike</a></b>"
+ABOUT_TXT = "<b>Hi{first}\n┏━━━━━━━━━━━━━━━\n◈ Owner: <a href=https://t.me/Itz_Spike>Spike</a>\n◈ Anime channel : <a href=https://t.me/Anime_Wide>Anime Wide</a>\n◈ Movie & Series: <a href=https://t.me/+mKXIX38_UpMxOTg1>Netflix</a>\n◈ Lɪʙʀᴀʀy : <a href=https://github.com/pyrogram>Pyʀᴏɢʀᴀᴍ</a>\n◈ ᴍʏ ꜱᴇʀᴠᴇʀ : <a href=https://dashboard.heroku.com>Heroku</a>\n◈ Develop By  : <a href=https://t.me/Itz_Spike>Spike</a>\n┗━━━━━━━━━━━━━━━</b>"
 
 # start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʜɪ ᴛʜᴇʀᴇ... {first}! 💥\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\n Powered By - @Animes_Paradox</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>ʜɪ {first}\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ\n Powered By - @Animes_Wide</b>")
 try:
     ADMINS=[6193451722]
     for x in (os.environ.get("ADMINS", "6193451722").split()):
         ADMINS.append(int(x))
-except ValueError:
+except ValueError: me 
         raise Exception("Your Owner list does not contain valid integers.")
 
 # Force sub message
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}!⚡\n\n🫧ᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ʙᴏᴛʜ ᴏꜰ ᴏᴜʀ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ...!")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\nᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ʙᴏᴛʜ ᴏꜰ ᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ !!")
 
 # set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -60,14 +60,14 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "🚫Pʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ᴅɪʀᴇᴄᴛʟʏ ɪ ᴀᴍ ᴏɴʟʏ ᴡᴏʀᴋ ꜰᴏʀ - @Animes_Paradox"
+USER_REPLY_TEXT = "🚫 Pʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ᴅɪʀᴇᴄᴛʟʏ ɪ ᴀᴍ ᴏɴʟʏ ᴡᴏʀᴋ ꜰᴏʀ - @Animes_Wide"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(6193451722)
 
 AUTO_DEL = os.environ.get("AUTO_DEL", "True")
 DEL_TIMER = int(os.environ.get("DEL_TIMER", "600"))
-DEL_MSG = "<b>This File is deleting automatically in {time}. Forward in your Saved Messages..!</b>"
+DEL_MSG = "<b>File will be Auto Deleted {time}, Forward to Saved Messages Now !!</b>"
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
