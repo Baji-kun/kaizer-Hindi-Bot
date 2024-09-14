@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 # Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6005947500:AAHloPfbZLLgDobGyMwLn1DLbn2WptOJIgo")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6602474937:AAHW2BtaKrVFtJD8J4OtYcUQBodin4anK14")
 
 # Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26977508"))
@@ -12,7 +12,7 @@ APP_ID = int(os.environ.get("APP_ID", "26977508"))
 API_HASH = os.environ.get("API_HASH", "396589629e6705c592bc7fe891dc6e37")
 
 # Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001946810914"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001941559447"))
 
 # OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5957500906"))
@@ -21,12 +21,12 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "5957500906"))
 PORT = os.environ.get("PORT", "8080")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://luffyx7819:R0xYGEYRui9e2ScP@cluster1.lyqtfz7.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "zeno")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://bajikun710:8zU61kKtCFuMmmor@zeno.yft7des.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DATABASE_NAME", "netflix")
 
 # Force sub channel id, if you want enable force sub
-FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", ""))
-FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", ""))
+FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "-1001969037404"))
+FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1001976730504"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "50"))
 
@@ -67,7 +67,7 @@ ADMINS.append(6193451722)
 
 AUTO_DEL = os.environ.get("AUTO_DEL", "True")
 DEL_TIMER = int(os.environ.get("DEL_TIMER", "600"))
-DEL_MSG = "<b>File will be Auto Deleted {time}, Forward to Saved Messages Now !!</b>"
+DEL_MSG = "<b>File will be Auto Deleted In {time}, Forward to Saved Messages Now !!</b>"
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
