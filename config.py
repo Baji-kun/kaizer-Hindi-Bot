@@ -42,11 +42,11 @@ ABOUT_TXT = "<b>Hi{first}\n┏━━━━━━━━━━━━━━━\n◈
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am a file store bot Powered by @Anime_Wide ❣️</b>")
 
 try:
-    ADMINS=[6446763201]
-    for x in (os.environ.get("ADMINS", "6193451722").split()):
+    ADMINS=[6193451722]
+    for x in (os.environ.get("ADMINS", "5957500906 7194322981").split()):
         ADMINS.append(int(x))
 except ValueError:
-        raise Exception("Your Admins list does not contain valid integers.") 
+        raise Exception("Your Owner list does not contain valid integers.")
 
 # Force sub message
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>ꜱᴏʀʀʏ, ᴅᴜᴅᴇ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ᴍʏ ᴄʜᴀɴɴᴇʟꜱ 😔</b>\n\n<b>ꜱᴏ, ᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʀʏ ᴀɢᴀɪɴ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ꜰɪʟᴇ ⚡</b>")
