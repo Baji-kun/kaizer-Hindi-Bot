@@ -31,8 +31,8 @@ FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1001976730504"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "50"))
 
 # Mainly add graph else telegraph link
-START_PIC = os.environ.get("START_PIC", "https://graph.org/file/951ce4c5d759ba604d8be.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/951ce4c5d759ba604d8be.jpg")
+START_PIC = os.environ.get("START_PIC", "https://graph.org/file/9476659f5ddae89b5ae9e.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/9476659f5ddae89b5ae9e.jpg")
 
 # Add your text according to you
 HELP_TXT = "<b>Hi\nThis is an file sharing bot work for @Animes_Wide\n\n❏ Bot Cammands\n├/start : start the bot\n\nSimply click on link and start the bot join both channels and try again thats it\n\nDeveloped by <a href=https://t.me/Itz_Spike>Spike</a></b>"
