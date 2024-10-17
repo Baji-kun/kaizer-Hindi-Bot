@@ -3,43 +3,43 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 # Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6491113751:AAFFmJaX11F4Mhf54uuZ3XoxKicqgOyFY3s")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7741241879:AAHGtb33VOL2T0-NTKCeph_LLHWytzWwx7U")
 
 # Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "26977508"))
+APP_ID = int(os.environ.get("APP_ID", "26634100"))
 
 # Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "396589629e6705c592bc7fe891dc6e37")
+API_HASH = os.environ.get("API_HASH", "9ea49405d5a93e784114c469f5ce4bbd")
 
 # Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001946810914"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002309655070"))
 
 # OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5957500906"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6635547757"))
 
 # Port
 PORT = os.environ.get("PORT", "8080")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://kaibot710:B94dKHfcK7FkgX7W@kaibot.guzoebw.mongodb.net/retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Taki:bot@taki.y0vyy.mongodb.net/?retryWrites=true&w=majority&appName=Taki")
 DB_NAME = os.environ.get("DATABASE_NAME", "Kai")
 
 # Force sub channel id, if you want enable force sub
-FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "-1001796496143"))
-FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1002055885939"))
+FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "0"))
+FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "50"))
 
 # Mainly add graph else telegraph link
-START_PIC = os.environ.get("START_PIC", "https://graph.org/file/9476659f5ddae89b5ae9e.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/9476659f5ddae89b5ae9e.jpg")
+START_PIC = os.environ.get("START_PIC", "https://envs.sh/T14.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/T14.jpg")
 
 # Add your text according to you
 HELP_TXT = "<b>Hi\nThis is an file sharing bot work for @Animes_Wide\n\n❏ Bot Cammands\n├/start : start the bot\n\nSimply click on link and start the bot join both channels and try again thats it\n\nDeveloped by <a href=https://t.me/Itz_Spike>Spike</a></b>"
 ABOUT_TXT = "<b>Hi{first}\n┏━━━━━━━━━━━━━━━\n◈ Owner: <a href=https://t.me/Itz_Spike>Spike</a>\n◈ Anime channel : <a href=https://t.me/Anime_Wide>Anime Wide</a>\n◈ Movie & Series: <a href=https://t.me/+mKXIX38_UpMxOTg1>Netflix</a>\n◈ Lɪʙʀᴀʀy : <a href=https://github.com/pyrogram>Pyʀᴏɢʀᴀᴍ</a>\n◈ ᴍʏ ꜱᴇʀᴠᴇʀ : <a href=https://dashboard.heroku.com>Heroku</a>\n◈ Develop By  : <a href=https://t.me/Itz_Spike>Spike</a>\n┗━━━━━━━━━━━━━━━</b>"
 
 # start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am a file store bot Powered by @Anime_Wide ❣️</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am a File Store Bot Powered By @Hentaii_Hanime_HEMTAI</b>")
 
 try:
     ADMINS=[6193451722]
@@ -61,13 +61,13 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "🚫 Pʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ᴅɪʀᴇᴄᴛʟʏ ɪ ᴀᴍ ᴏɴʟʏ ᴡᴏʀᴋ ꜰᴏʀ - @Animes_Wide"
+USER_REPLY_TEXT = "🚫 Pʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ᴅɪʀᴇᴄᴛʟʏ ɪ ᴀᴍ ᴏɴʟʏ ᴡᴏʀᴋ ꜰᴏʀ - @Hentaii_Hanime_HEMTAI"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(6193451722)
 
 AUTO_DEL = os.environ.get("AUTO_DEL", "True")
-DEL_TIMER = int(os.environ.get("DEL_TIMER", "600"))
+DEL_TIMER = int(os.environ.get("DEL_TIMER", "1800"))
 DEL_MSG = "<b>File will be Auto Deleted In {time}, Forward to Saved Messages Now !!</b>"
 
 LOG_FILE_NAME = "filesharingbot.txt"
