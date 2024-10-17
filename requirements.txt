@@ -1,4 +1,4 @@
-Pyrofork==2.3.48
+pyrogram==2.0.106
 TgCrypto==1.2.5
 pymongo
 dnspython==2.3.0
