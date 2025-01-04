@@ -6,7 +6,6 @@ import asyncio
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
 from config import ADMINS
-from database.database import present_admin, present_channel, present_channel2
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.errors import FloodWait
 
